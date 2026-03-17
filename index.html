@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roleta de Prêmios</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Wendy+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+  <div class="app-container">
+    <header>
+      <h1>Gire e Ganhe!</h1>
+      <p>Teste sua sorte e concorra a prêmios incríveis.</p>
+    </header>
+
+    <main>
+      <div class="roulette-wrapper">
+        <div class="pointer"></div>
+        <div class="wheel-container">
+          <div class="wheel" id="wheel">
+            <!-- Segments will be injected by JS -->
+          </div>
+          <div class="center-logo">
+            <img src="https://assets.cdn.filesafe.space/ybJMircVmbENPWEgP63g/media/69b96ca5dac584dd28a01c9f.png" alt="Logo">
+          </div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="spin-btn" class="spin-btn">Girar Roleta</button>
+      </div>
+
+      <div id="result-display" class="result-display hidden">
+        <h2 id="result-message"></h2>
+      </div>
+    </main>
+  </div>
+
+  <script type="module" src="/src/script.js"></script>
+</body>
+</html>
+
